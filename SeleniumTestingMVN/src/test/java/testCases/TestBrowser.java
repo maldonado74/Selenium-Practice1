@@ -11,7 +11,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+/*
+ * This is an exercise to enter the credentials to login in to a website using xpath
+ */
 public class TestBrowser {
 	static String browser = "Firefox";
 	static WebDriver driver;//both can be used RemoteWebDriver or WebDriver
@@ -32,7 +34,7 @@ public class TestBrowser {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10)); //will wait 10 seconds in order to go to next input
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("password"))).sendKeys("admin");// enter the input password 
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div/form/div[2]/button[2]")).click();//will click the next button of the password
-		
-	}
+		System.out.println("Completed this HW with credentials and Github");
+		}
 
 }

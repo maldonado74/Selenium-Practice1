@@ -1,0 +1,4 @@
+firstName,lastName,email,telephone
+Automation,Tester,csvtest1@example.com,3015551111
+Selenium,User,csvtest2@example.com,3015552222
+QA,Engineer,csvtest3@example.com,3015553333
